@@ -7,21 +7,30 @@ import ReactModal from "react-modal";
 import "../Components/Modal.css";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, onIsOpenModal] = useState(true);
+  const [close, onCloseModal] = useState(false);
 
-  const handleClose = () => {
-    setIsOpen(false);
+  const openModal = () => {
+    onIsOpenModal(true);
+  };
+
+  const closeModal = () => {
+    onCloseModal(true);
+    onIsOpenModal(false);
   };
 
   return (
     <div>
-      <ReactModal isOpen={isOpen}>
+      <ReactModal isOpen={true}>
         <div className="modal">
           <div className="header"> Explanations </div>
-          <button type="button" onClick={handleClose}>
+          <button type="button" onClick={closeModal}>
             Fermer
           </button>
 
+          {/* <button className="close" onClose={true}>
+            &times;
+          </button>*/}
           <div className="content">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a
