@@ -5,8 +5,7 @@ class Footer extends Component {
     render(){
         return(
             <ul id="footer">
-                <li>support</li>
-                <li>Copiright (c) 2021 Wild Code School</li>
+                <li>Copyright (c) 2021 Wild Code School</li>
             </ul>
         )
     }
