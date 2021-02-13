@@ -13,9 +13,7 @@ class ActivitySubscribe extends Component {
             newInputName: "",
             newInputLastame:"",
             newInputEmail:"",
-            newInputCheck:""
-
-
+            newInputCheck:false,
         }
     }
 
@@ -31,24 +29,29 @@ class ActivitySubscribe extends Component {
         this.setState({activeInputCheck: true})
     }
 
-    activeInputEmail = (event) => {
-        this.setState({activeInputEmail: true})
+    newInputName = (event) => {
+        this.setState({newInputName: event.target.value})
     }
-
+    
     newInputLastame = (event) => {
-        this.setState({newInputLastame: true})
+        this.setState({newInputLastame: event.target.value})
     }
 
     newInputEmail = (event) => {
-        this.setState({newInputEmail: true})
+        this.setState({newInputEmail: event.target.value})
     }
 
     newInputCheck = (event) => {
         this.setState({newInputCheck: true})
     }
-
+    
+    activBtnSubmit = (event) => {
+        event.preventDefault();
+        this.props.activOnEvent(event);
+    }
+    
     render(){
-        return(/*
+        return(
                 <content>
                     <h2>Want to subscribe to this mission?</h2>
 
@@ -56,8 +59,10 @@ class ActivitySubscribe extends Component {
                         <div id="activExistSubsc">
                             <h3 class="activSubscTitle">already a member ?</h3>
                             
-                            <form id="activSubscData">
-
+                            <form 
+                                onSubmit={this.activBtnSubmit}
+                                id="activSubscData">
+                                    
                                 <input 
                                     onChange={this.activeInputEmail} 
                                     id="activSEmail" 
@@ -86,51 +91,60 @@ class ActivitySubscribe extends Component {
 
                                 <label for="conf">I confirm I want to participate</label>
                                 <br />
-                                <button type="submit"> Sign in for this mission!</button>
+
+                                <button 
+                                    type="submit"> Sign in for this mission!</button>
 
                             </form>
                         </div>
 
                         <div id="activNewSubsc">
                             <h3 class="activSubscTitle">New member</h3>
-                            <div id="NewSubscrData">
+                            <form id="NewSubscrData">
                                 <input 
-                                    onChange={newInputName}
+                                    onChange={this.newInputName}
                                     id="newSubscrFName" 
-                                    placeholder="Your First name" 
-                                    value={this.state.newInputName}
-                                />
-                                <input 
-                                    onChange={newInputLastame}
-                                    id="newSubscrLName" 
-                                    placeholder="Your Last name"
-                                    value={this.state.newInputLastame}
-                                />
-                                <input 
-                                    onChange={newInputEmail}
-                                    id="newSubscrLEmail" 
-                                    placeholder="Your Email" 
-                                    value={this.state.newInputEmail}
-                                />
+                                    type="text" 
+                                    placeholder="Your First name"
+                                    required={true}
+                                    value={this.state.newInputName} />
+                                <br />
 
                                 <input 
-                                    onChange={newInputCheck}
+                                    onChange={this.newInputLastame}
+                                    id="newSubscrLName" 
+                                    type="text" 
+                                    placeholder="Your Last name"
+                                    required={true}
+                                    value={this.state.newInputLastame} />
+                                <br />
+
+                                <input 
+                                    onChange={this.newInputEmail}
+                                    id="newSubscrLEmail" 
+                                    type="email" 
+                                    placeholder="Your Email"
+                                    required={true}
+                                    value={this.state.newInputEmail} />
+                                <br />
+
+                                <input 
+                                    onChange={this.newInputCheck}
                                     id="newSubscConf" 
                                     type="checkbox" 
                                     name="conf"
-                                    value={this.state.newInputCheck}
-                                />
-                                
+                                    required={true}
+                                    value={this.state.newInputCheck} />
                                 <label for="conf">I want to join</label>
-                                <button>Join the team!</button>
-                            </div>
+                                <br />
+
+                                <button type="submit"> Join the team</button>
+                            </form>
                         </div>
                     </div>
-                </content>
-        */
-       <>
-       </>)
-       }
+                </content> 
+       )
+    }
 }
 
 export default ActivitySubscribe;
