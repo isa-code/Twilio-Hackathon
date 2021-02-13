@@ -14,7 +14,6 @@ function App() {
         <Route path="/soutien" component={Soutien} />
         <Route path="/activity" component={Activity} />
         <Route component={NotFound404} />
-        {/* <Route path="/Activity/:slug" component={Activity} /> */}
       </Switch>
     </div>
   );
