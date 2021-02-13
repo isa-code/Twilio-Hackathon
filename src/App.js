@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Activity from "./Pages/Activity";
 import Soutien from "./Pages/Soutien/Soutenir";
 import NotFound404 from "./Pages/NotFound404";
+import CreateActivity from "./Pages/CreateActivity";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/soutien" component={Soutien} />
         <Route path="/activity" component={Activity} />
+        <Route path="/createactivity" component={CreateActivity} />
         <Route component={NotFound404} />
       </Switch>
     </div>
