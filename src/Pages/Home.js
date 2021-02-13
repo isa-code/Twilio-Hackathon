@@ -1,4 +1,4 @@
-import React, { setState, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Maps from "../Components/Maps.jsx";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -18,9 +18,6 @@ function Home() {
       <ReactModal isOpen={isOpen}>
         <div className="modal">
           <div className="header"> Explanations </div>
-          <button type="button" onClick={handleClose}>
-            Fermer
-          </button>
 
           <div className="content">
             {" "}
@@ -35,6 +32,9 @@ function Home() {
             voluptas rem alias. Vitae?
           </div>
         </div>
+        <button type="button" className="modalBtnClose" onClick={handleClose}>
+          Fermer
+        </button>
       </ReactModal>
       <Navbar />
       <Maps />

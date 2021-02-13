@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Login from "./Login";
 
 class Navbar extends Component {
-
   render() {
     return (
       <div id="nav">
@@ -15,14 +14,13 @@ class Navbar extends Component {
         />
         <ul>
           <Link to="/">About Petitnomdusite</Link>
-          <li>Join the team</li>
+          <Link to="/soutien">LinkJoin the team</Link>
           <li>Join an organization</li>
         </ul>
         <VscAccount />
       </div>
     );
   }
-
 }
 
 export default Navbar;
