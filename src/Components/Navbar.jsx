@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { VscAccount } from "react-icons/vsc";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Login from "./Login";
 
 class Navbar extends Component {
+
   render() {
     return (
       <div id="nav">
@@ -20,6 +22,7 @@ class Navbar extends Component {
       </div>
     );
   }
+
 }
 
 export default Navbar;
