@@ -1,6 +1,6 @@
 import React from "react";
 
-const Soutien = () => {
+function Soutien() {
   return (
     <div className="soutienstyle">
       <h1>
@@ -52,6 +52,6 @@ const Soutien = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Soutien;
