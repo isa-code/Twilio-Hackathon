@@ -37,4 +37,4 @@ class CreateActivity extends Component {
     }
 }
 
-export default CreateActivity;
+export default CreateActivity;*/
