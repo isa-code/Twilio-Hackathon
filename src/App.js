@@ -1,18 +1,17 @@
 
 import React from 'react';
 import './App.css';
-import Maps from './components/Maps.jsx';
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Activity from './Pages/Activity';
+import { Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home";
+import NotFound404 from "./Pages/NotFound404"
 
 function App() {
   return (
     <div>
-      <Navbar />
-       <Maps/>
-      <Activity />
-      <Footer />
+      <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/" component={NotFound404} />
+        </Switch>
     </div>
   );
 

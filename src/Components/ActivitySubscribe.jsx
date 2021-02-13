@@ -9,8 +9,7 @@ class ActivitySubscribe extends Component {
         this.state = {
             activeInputEmail: "",
             activeInputPwd: "",
-            activeInputCheck: false
-
+            activeInputCheck: false,
             newInputName: "",
             newInputLastame:"",
             newInputEmail:"",
@@ -49,7 +48,7 @@ class ActivitySubscribe extends Component {
     }
 
     render(){
-        return(
+        return(/*
                 <content>
                     <h2>Want to subscribe to this mission?</h2>
 
@@ -128,8 +127,10 @@ class ActivitySubscribe extends Component {
                         </div>
                     </div>
                 </content>
-        )
-    }
+        */
+       <>
+       </>)
+       }
 }
 
 export default ActivitySubscribe;
