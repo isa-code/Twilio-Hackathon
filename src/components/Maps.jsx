@@ -1,9 +1,12 @@
+/* global google */
 import React from 'react';
+import { MarkerWithLabel } from "react-google-maps/lib/components/addons/MarkerWithLabel";
 import {
     withGoogleMap,
     withScriptjs,
     GoogleMap,
-    Marker,
+    Marker   
+  
   } from "react-google-maps";
   //install react-google-maps pour avoir les dependencies de google maps
 
@@ -11,7 +14,7 @@ import {
 
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
       <GoogleMap //on va établir le type de zoom pour la carte et la localisation par defaut.
-        defaultZoom={8}
+        defaultZoom={12}
         defaultCenter={{ lat: 48.81897912, lng: 2.42294885 }}
         
       >
@@ -38,6 +41,13 @@ import {
             lat: 48.858358, 
             lng: 2.28194093 }}
         />
+        <MarkerWithLabel
+      position={{ lat: 48.84672719, lng: 2.28643757 }}
+      labelAnchor={new google.maps.Point(0, 0)}
+      labelStyle={{backgroundColor: "yellow", fontSize: "32px", padding: "16px"}}
+    >
+      <div>Hello There!</div>
+    </MarkerWithLabel>
 
         
         
