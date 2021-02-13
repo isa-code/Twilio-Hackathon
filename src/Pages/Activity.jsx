@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ActivitySubscribe from "../Components/ActivitySubscribe";
 import ActivityContent from "../Components/ActivityContent";
 import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
+import CreateActivity from "../Pages/CreateActivity";
 
 class Activity extends Component {
     constructor(props){
@@ -27,6 +28,8 @@ class Activity extends Component {
                 <ActivitySubsActivModal 
                     info={this.state.modalActiv} />
                 }
+
+                <CreateActivity />
             </div>
         )
     }
