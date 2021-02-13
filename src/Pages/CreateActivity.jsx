@@ -1,4 +1,4 @@
-import Reat from "react";
+/*import Reat from "react";
 import { Component } from "react";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
@@ -42,4 +42,4 @@ class CreateActivity extends Component {
     }
 }
 
-export default CreateActivity;
+export default CreateActivity;*/

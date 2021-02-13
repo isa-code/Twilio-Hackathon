@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ActivitySubscribe from "../Components/ActivitySubscribe";
 import ActivityContent from "../Components/ActivityContent";
 import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
@@ -35,4 +35,4 @@ class Activity extends Component {
     }
 }
 
-export default Activity;
+export default Activity;*/

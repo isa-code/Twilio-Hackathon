@@ -1,0 +1,11 @@
+
+.soutienstyle img {
+    width: 150px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
