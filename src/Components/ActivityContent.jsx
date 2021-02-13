@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Pages/Activity.css";
-import Soutien from '../Components/Soutien/Soutenir';
+
 
 class ActivityContent extends Component {
     render(){
@@ -21,7 +21,7 @@ class ActivityContent extends Component {
 
                 <div className="more">
                         <button type="button">
-                           <Link to="/Soutien/">Je soutiens les actions par moi meme </Link> 
+                           <Link to="/soutenir/">Join an organization </Link> 
                         </button>
                     
 

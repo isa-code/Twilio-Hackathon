@@ -1,20 +1,21 @@
 /*Style pour le map de la page d'accueil*/
 .mapStyle{
-  width: 450px;
+  width: 100%;
   height: 450px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   margin: auto;
-  background: white;
+
 }
 
 /*Style pour les bouttons de soutien dans la page d'accueil*/
 .more button{
-    background-color: #ef7905;
-    color: #fff;
+    background-color: #F2C288 ;
     padding: 10px 60px 10px 60px;
     font-size: 22px;
+    margin-left: 550px;
+    margin-top: 50px;
   
 }
