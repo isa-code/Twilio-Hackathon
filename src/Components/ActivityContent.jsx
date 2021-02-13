@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../Pages/Activity.css";
+import Soutien from '../Components/Soutien/Soutenir';
 
 class ActivityContent extends Component {
     render(){
@@ -15,6 +17,14 @@ class ActivityContent extends Component {
                         <p>Heure de début, heure de fin</p> 
                         <p>Aptitudes requises</p>
                     </div>
+                </div>
+
+                <div className="more">
+                        <button type="button">
+                           <Link to="/Soutien/">Je soutiens les actions par moi meme </Link> 
+                        </button>
+                    
+
                 </div>
             </div>
         )
