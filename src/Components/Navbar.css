@@ -66,6 +66,34 @@
     float: right;
   }
   
+  #sousNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F27D72;
+    width: 100%;
+    height: 50px;
+  }
+
+  #sousNav p {
+    padding: 0px 40px;
+    color: white;
+    font-size: 14px;
+    height: 50px;
+  }
+
+  #sousNav p:hover {
+    padding: 0px 40px;
+    padding-top: 20px;
+    color: white;
+    background-color: #F2C2B8;
+    font-size: 14px;
+    height: 50px;
+    margin: 0px;
+    color: black;
+  }
+
   /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
   @media screen and (max-width: 600px) {
     #nav {

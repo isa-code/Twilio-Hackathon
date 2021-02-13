@@ -1,44 +1,39 @@
-/*import Reat from "react";
+import React from "react";
 import { Component } from "react";
-import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-
 
 class CreateActivity extends Component {
-    constructor(props){
-        super(props)
-
-        this.state={
-            date:""
-        }
-    }
-
-    changeDate = (event) => {
-        alert(teeeest)
-    }
     
     render(){
         return(
-            <div>
-                <select id="CreateActivSelect">
-                    <option value="">Chose a mission</option>
-                    <option value="">Street maraud</option>
-                    <option value="">Guidance</option>
-                    <option value="">Social guidance</option>
-                    <option value="">A night in a warm bed</option>
-                    <option value="">Social guidance</option>
-                    <option value="">Pampering</option>
-                </select>
+            <>
+                <div>
+                    <select id="CreateActivSelect">
+                        <option value="">Chose a mission</option>
+                        <option value="">Street maraud</option>
+                        <option value="">Guidance</option>
+                        <option value="">Social guidance</option>
+                        <option value="">A night in a warm bed</option>
+                        <option value="">Social guidance</option>
+                        <option value="">Pampering</option>
+                    </select>
 
-                <input type="text" placeholder="Chose a title for your mission" />
+                    <input type="text" placeholder="Chose a title for your mission" />
 
-                <DatePicker 
-                    onChange={this.changeDate(event)}
-                    selected={this.state.date} />
+                    <form>
+                        <label for="meeting-time">Choose a time for your appointment:</label>
 
-            </div>
-        )
+                        <input type="datetime-local" id="meeting-time"
+                            name="meeting-time" value="2018-06-12T19:30"
+                            min="2018-06-07T00:00" max="2018-06-14T00:00" />
+                        <button>OK</button>
+                    </form>
+
+                    <input type="text" placeholder="a small description" />
+                </div>
+
+            </>
+            
+        );
     }
 }
 

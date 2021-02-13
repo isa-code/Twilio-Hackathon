@@ -6,6 +6,7 @@ import Activity from "./Pages/Activity";
 import Soutien from "./Pages/Soutenir";
 import Login from "./Components/Login";
 import NotFound404 from "./Pages/NotFound404";
+import CreateActivity from "./Pages/CreateActivity";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/soutien" component={Soutien} />
         <Route path="/login/" component={Login}/>
         <Route path="/activity" component={Activity} />
+        <Route path="/createactivity" component={CreateActivity} />
         <Route component={NotFound404} />
       </Switch>
     </div>
