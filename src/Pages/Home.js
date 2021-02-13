@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Maps from "../Components/Maps.jsx";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import Activity from "../Pages/Activity";
+//import Activity from "../Pages/Activity";
 import ReactModal from "react-modal";
 import "../Components/Modal.css";
 
@@ -38,7 +38,7 @@ function Home() {
       </ReactModal>
       <Navbar />
       <Maps />
-      <Activity />
+
       <Footer />
     </div>
   );
