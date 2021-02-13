@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { VscAccount } from 'react-icons/vsc';
 import "./Navbar.css";
 
+import { Link } from "react-router-dom";
+import Login from "./Login";
+
 class Navbar extends Component {
     render(){
         return(
@@ -11,7 +14,10 @@ class Navbar extends Component {
                     <li>About Petitnomdusite</li>
                     <li>Join the team</li>
                     <li>Join an organization</li>
-                    <li><VscAccount /></li>
+                    <li><Link to='/login' >
+                        <VscAccount />
+                        </Link>
+                        </li>
                 </ul>
             </div>
         )
