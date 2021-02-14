@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ActivitySubscribe from "../Components/ActivitySubscribe";
 import ActivityContent from "../Components/ActivityContent";
 //import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
-import CreateActivity from "../Pages/CreateActivity";
+import Footer from "../Components/Footer";
 import ReactModal from "react-modal";
 import "../Components/ModalSubs.css";
 import { GrClose } from "react-icons/gr";
@@ -71,7 +71,7 @@ class Activity extends Component {
             </button>
           </ReactModal>
         )}
-        <CreateActivity />
+        <Footer />
       </div>
     );
   }

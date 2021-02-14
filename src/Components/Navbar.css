@@ -67,31 +67,40 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* background: linear-gradient(to top, black, 20%, cyan); */
   /* background: linear-gradient(to top, black, cyan); */
-  /* background: linear-gradient(#e9584b, #f27d72, #ec584b); */
-  background-color: #f27d72;
+  background: linear-gradient(#e9584b, #f5a69e, #ec584b);
+  /* background-color: #f27d72; */
   width: 100%;
   height: 50px;
+  font-family: "Lexend Mega", sans-serif !important;
+  /* font-family: "Caveat", cursive !important; */
+  /* font-family: "Indie Flower", cursive !important; */
+  /* font-family: "Nova Round", cursive !important; */
+  /* font-family: "Dosis", sans-serif !important; */
+  /* font-family: "Josefin Sans", serif !important; */
 }
 
-#sousNav p {
+.linkSousNav {
+  display: flex;
+  align-items: center;
   padding: 0px 40px;
   color: white;
   font-size: 14px;
   height: 50px;
 }
 
-#sousNav p:hover {
-  padding: 0px 40px;
-  padding-top: 20px;
+.linkSousNav :hover {
+  padding: 20px;
+  /* padding-top: 20px; */
   color: white;
   background-color: #f2c2b8;
   font-size: 14px;
-  height: 50px;
+  height: 25px;
   margin: 0px;
   color: black;
+  border-radius: 15px;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
