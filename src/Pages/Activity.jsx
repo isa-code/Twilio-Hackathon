@@ -6,7 +6,6 @@ import Footer from "../Components/Footer";
 import ReactModal from "react-modal";
 import "../Components/ModalSubs.css";
 import { GrClose } from "react-icons/gr";
-import Footer from "../Components/Footer";
 
 class Activity extends Component {
   constructor(props) {

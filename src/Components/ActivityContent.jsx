@@ -10,7 +10,6 @@ class ActivityContent extends Component {
       <>
       <Navbar/>
       <SousNav/>
-      <div>
         <h1 id="activTitle">Street marauding</h1>
         <div id="activPresent">
           <img
