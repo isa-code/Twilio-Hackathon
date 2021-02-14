@@ -1,30 +1,32 @@
-import React from'react';
+import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import "./Login.css";
 
-function Login(){
-    return(
-        <>
-            <Navbar/>
-            <div className='login'>
-    
-                <h1>Sign-in</h1>
+function Login() {
+  return (
+    <>
+      <Navbar />
 
-                <form>
-                    <h5>E-mail</h5>
-                    <input type='text' />
+      <div className="login">
+        <h1>Sign-in</h1>
 
-                    <h5>Password</h5>
-                    <input type='password' />
+        <form className="formLogin">
+          <h5>E-mail</h5>
+          <input type="text" />
 
-                    <button type='submit'  className='login__signInButton'>Sign In</button>
-                </form>
-            </div>
-            <Footer/>
+          <h5>Password</h5>
+          <input type="password" />
 
-        </>
-        
-    )
+          <button type="submit" className="login__signInButton">
+            Sign In
+          </button>
+        </form>
+      </div>
+
+      <Footer />
+    </>
+  );
 }
 
 export default Login;

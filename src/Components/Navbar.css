@@ -1,110 +1,110 @@
 #nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #2C7BBF;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    }
-    .logo{
-      width: 100px;
-      border-radius: 20px;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(#2c7bbf, #7fb7e7, #2c7bbf);
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  
-    ul{
-        list-style: none;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
 
-  
+ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    #nav li{
-      display: inline;
-      text-align: center;
-      
-    }
-  
-  /* Style the links inside the navigation bar */
-  #nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  #nav li:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  #nav li:active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  /* Centered section inside the top navigation */
-  #nav-centered a {
+#nav li {
+  display: inline;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+#nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#nav li:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#nav li:active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+#nav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+#nav-right {
+  float: right;
+}
+
+#sousNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: linear-gradient(to top, black, 20%, cyan); */
+  /* background: linear-gradient(to top, black, cyan); */
+  /* background: linear-gradient(#e9584b, #f27d72, #ec584b); */
+  background-color: #f27d72;
+  width: 100%;
+  height: 50px;
+}
+
+#sousNav p {
+  padding: 0px 40px;
+  color: white;
+  font-size: 14px;
+  height: 50px;
+}
+
+#sousNav p:hover {
+  padding: 0px 40px;
+  padding-top: 20px;
+  color: white;
+  background-color: #f2c2b8;
+  font-size: 14px;
+  height: 50px;
+  margin: 0px;
+  color: black;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  #nav {
     float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Right-aligned section inside the top navigation */
-  #nav-right {
-    float: right;
-  }
-  
-  #sousNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #F27D72;
-    width: 100%;
-    height: 50px;
+    display: block;
   }
 
-  #sousNav p {
-    padding: 0px 40px;
-    color: white;
-    font-size: 14px;
-    height: 50px;
+  #nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
   }
-
-  #sousNav p:hover {
-    padding: 0px 40px;
-    padding-top: 20px;
-    color: white;
-    background-color: #F2C2B8;
-    font-size: 14px;
-    height: 50px;
-    margin: 0px;
-    color: black;
-  }
-
-  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-  @media screen and (max-width: 600px) {
-    #nav {
-      float: none;
-      display: block;
-    }
-  
-    #nav {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
-    }
 }

@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Lexend+Mega&display=swap");
+
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  font-family: DejaVu Sans Mono , monospace;
+  font-family: DejaVu Sans Mono, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-

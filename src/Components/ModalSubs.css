@@ -1,13 +1,15 @@
 .modalSubs {
-    background-color: aqua;    
+  background-color: aqua;
 }
 
-.ReactModal__Content, .ReactModal__Content--after-open {
-    width: 30% !important;
-    height: 35%;
-    align-content: center;
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  width: 30%;
+  height: 35%;
+  align-content: center;
 }
 
-.ReactModal__Overlay, .ReactModal__Overlay--after-open {
-    align-self: center !important;
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  align-self: center !important;
 }
