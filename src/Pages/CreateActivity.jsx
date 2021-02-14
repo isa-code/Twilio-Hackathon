@@ -2,13 +2,15 @@ import React from "react";
 import { Component } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import SousNav from "../Components/SousNav";
 
 class CreateActivity extends Component {
 
     render(){
         return(
             <>
-                <Navbar/>
+            <Navbar/>
+            <SousNav/>
                 <div>
                     <select id="CreateActivSelect">
                         <option value="">Chose a mission</option>
@@ -39,6 +41,8 @@ class CreateActivity extends Component {
           </form>
           <input type="text" placeholder="a small description" />
         </div>
+        
+        <Footer/>
       </>
     );
   }
