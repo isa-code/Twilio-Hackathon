@@ -1,20 +1,24 @@
 import React from "react";
 import { Component } from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 class CreateActivity extends Component {
-  render() {
-    return (
-      <>
-        <div>
-          <select id="CreateActivSelect">
-            <option value="">Chose a mission</option>
-            <option value="">Street maraud</option>
-            <option value="">Guidance</option>
-            <option value="">Social guidance</option>
-            <option value="">A night in a warm bed</option>
-            <option value="">Social guidance</option>
-            <option value="">Pampering</option>
-          </select>
+
+    render(){
+        return(
+            <>
+                <Navbar/>
+                <div>
+                    <select id="CreateActivSelect">
+                        <option value="">Chose a mission</option>
+                        <option value="">Street maraud</option>
+                        <option value="">Guidance</option>
+                        <option value="">Social guidance</option>
+                        <option value="">A night in a warm bed</option>
+                        <option value="">Social guidance</option>
+                        <option value="">Pampering</option>
+                    </select>
 
           <input type="text" placeholder="Chose a title for your mission" />
 
@@ -33,7 +37,6 @@ class CreateActivity extends Component {
             />
             <button>OK</button>
           </form>
-
           <input type="text" placeholder="a small description" />
         </div>
       </>
