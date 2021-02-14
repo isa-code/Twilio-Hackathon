@@ -66,14 +66,15 @@ ul {
 #sousNav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   /* background: linear-gradient(to top, black, 20%, cyan); */
   /* background: linear-gradient(to top, black, cyan); */
   /* background: linear-gradient(#e9584b, #f27d72, #ec584b); */
   background-color: #f27d72;
   width: 100%;
   height: 50px;
+  box-shadow: 0px 5px 20 rgb(71,71,71);
 }
 
 #sousNav p {

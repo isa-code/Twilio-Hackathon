@@ -6,6 +6,7 @@ import CreateActivity from "../Pages/CreateActivity";
 import ReactModal from "react-modal";
 import "../Components/ModalSubs.css";
 import { GrClose } from "react-icons/gr";
+import Footer from "../Components/Footer";
 
 class Activity extends Component {
   constructor(props) {
@@ -71,7 +72,7 @@ class Activity extends Component {
             </button>
           </ReactModal>
         )}
-        <CreateActivity />
+        <Footer/>
       </div>
     );
   }

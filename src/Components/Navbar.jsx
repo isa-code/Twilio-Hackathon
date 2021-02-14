@@ -14,8 +14,8 @@ class Navbar extends Component {
         <Link to='/'><img src={Animation} alt="logo" className="logo"/></Link>
 
         <ul>
-          <Link to="/">About Petitnomdusite</Link>
-          <Link to="/soutien">Join the team</Link>
+          <Link to="/">Helpckathon</Link>
+          <Link to="/soutien">Know our the partners</Link>
         </ul>
         
         <Link to="/login/">
