@@ -3,6 +3,7 @@ import { Component } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import SousNav from "../Components/SousNav";
+import './Create.css';
 
 class CreateActivity extends Component {
 
@@ -11,7 +12,7 @@ class CreateActivity extends Component {
             <>
             <Navbar/>
             <SousNav/>
-                <div>
+                <div className="create">
                     <select id="CreateActivSelect">
                         <option value="">Chose a mission</option>
                         <option value="">Street maraud</option>
