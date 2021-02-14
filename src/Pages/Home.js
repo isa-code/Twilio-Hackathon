@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Maps from "../Components/Maps.jsx";
+import Maps from "../Components/map/Maps";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 //import Activity from "../Pages/Activity";

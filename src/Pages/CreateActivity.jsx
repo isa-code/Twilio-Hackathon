@@ -1,11 +1,14 @@
 import React from "react";
 import { Component } from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 class CreateActivity extends Component {
     
     render(){
         return(
             <>
+                <Navbar/>
                 <div>
                     <select id="CreateActivSelect">
                         <option value="">Chose a mission</option>
@@ -30,11 +33,11 @@ class CreateActivity extends Component {
 
                     <input type="text" placeholder="a small description" />
                 </div>
-
+                <Footer/>
             </>
             
         );
     }
 }
 
-export default CreateActivity;*/
+export default CreateActivity;

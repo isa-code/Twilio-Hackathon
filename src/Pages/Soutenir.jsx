@@ -57,7 +57,6 @@ function Soutien() {
             </li>
           </ul>
         </div>
-      </div>
     </div>
     <Footer/>
     </>
