@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Lexend+Mega&display=swap");
 
 body {
-  display: flex;
-  justify-content: center;
+  
   margin: 0;
   font-family: DejaVu Sans Mono, monospace;
   -webkit-font-smoothing: antialiased;

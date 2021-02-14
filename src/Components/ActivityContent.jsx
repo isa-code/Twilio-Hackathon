@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Pages/Activity.css";
+import Navbar from "./Navbar";
+import SousNav from "./SousNav";
+
 
 class ActivityContent extends Component {
   render() {
     return (
+      <>
+      <Navbar/>
+      <SousNav/>
       <div>
         <h1 id="activTitle">Street marauding</h1>
         <div id="activPresent">
@@ -26,6 +32,8 @@ class ActivityContent extends Component {
           </div>
         </div>
       </div>
+    
+      </>
     );
   }
 }

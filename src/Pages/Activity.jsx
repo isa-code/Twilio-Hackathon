@@ -39,7 +39,7 @@ class Activity extends Component {
           newOnEvent={this.displayModalNew}
         />
 
-        {this.state.modalActiv == true && (
+        {this.state.modalActiv === true && (
           <ReactModal class="modalSubs" isOpen={true}>
             <button
               type="button"
@@ -56,7 +56,7 @@ class Activity extends Component {
           </ReactModal>
         )}
 
-        {this.state.modalNew == true && (
+        {this.state.modalNew === true && (
           <ReactModal class="modalSubs" isOpen={true}>
             <div class="modalSubsTxt">
               <p>Done :-</p>

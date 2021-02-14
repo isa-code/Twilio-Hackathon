@@ -16,7 +16,6 @@ class Navbar extends Component {
         <ul>
           <Link to="/">About Petitnomdusite</Link>
           <Link to="/soutien">Join the team</Link>
-          <li>Join an organization</li>
         </ul>
         
         <Link to="/login/">

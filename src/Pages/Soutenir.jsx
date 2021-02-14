@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./Soutenir.css";
+import SousNav from "../Components/SousNav";
 
 function Soutien() {
   return (
     <>
       <Navbar />
+      <SousNav/>
       <div className="soutienstyle">
         <h1>
           Soutenir nos actions et connaitre les assosiations que nous aident
