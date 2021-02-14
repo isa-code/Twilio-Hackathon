@@ -4,7 +4,6 @@ import "../Pages/Activity.css";
 import Navbar from "./Navbar";
 import SousNav from "./SousNav";
 
-
 class ActivityContent extends Component {
   render() {
     return (
@@ -31,8 +30,6 @@ class ActivityContent extends Component {
             <p>Required aptitudes</p>
           </div>
         </div>
-      </div>
-    
       </>
     );
   }

@@ -14,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/soutien" component={Soutien} />
-        <Route path="/login/" component={Login}/>
+        <Route path="/login/" component={Login} />
         <Route path="/activity" component={Activity} />
         <Route path="/createactivity" component={CreateActivity} />
         <Route component={NotFound404} />
