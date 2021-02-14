@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 //import Activity from "../Pages/Activity";
 import ReactModal from "react-modal";
 import "../Components/Modal.css";
-import SousNav from "../Components/SousNav"
+import SousNav from "../Components/SousNav";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(true);
@@ -16,8 +16,16 @@ function Home() {
 
   return (
     <div>
-      <ReactModal isOpen={isOpen} style={{ borderRadius: "15px" }}>
-        <div className="modal">
+      <ReactModal isOpen={isOpen} className="reactModalFirtsConnexion">
+        <button
+          type="button"
+          className="modalBtnClose"
+          onClick={handleClose}
+          title="Fermer la fenêtre"
+        >
+          Fermer
+        </button>
+        <div className="modalFirtsConnexion">
           <div className="header"> Explanations </div>
 
           <div className="content">
@@ -32,9 +40,6 @@ function Home() {
             voluptas rem alias. Vitae?
           </div>
         </div>
-        <button type="button" className="modalBtnClose" onClick={handleClose}>
-          Fermer
-        </button>
       </ReactModal>
       <Navbar />
       <SousNav />

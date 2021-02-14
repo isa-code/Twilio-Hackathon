@@ -1,0 +1,23 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 25px;
+  /* background: linear-gradient(#91c7f7, #68aae4, #91c7f7); */
+  background: linear-gradient(#e9584b, #f27d72, #ec584b);
+  border-radius: 5px;
+  font-family: "Lexend Mega", sans-serif !important;
+  /* font-family: "Caveat", cursive !important; */
+  /* font-family: "Indie Flower", cursive !important; */
+  /* font-family: "Nova Round", cursive !important; */
+  /* font-family: "Dosis", sans-serif !important; */
+  /* font-family: "Josefin Sans", serif !important; */
+}
+
+.formLogin {
+  padding: 5px;
+}
+
+.login__signInButton {
+}

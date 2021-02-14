@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-import Brokenfile from "../images/Brokenfile.png";
-import Erreur from './erreur.gif';
+// import Brokenfile from "../images/Brokenfile.png";
+import Erreur from "./erreur.gif";
 
 function NotFound404() {
   return (
