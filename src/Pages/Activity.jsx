@@ -4,35 +4,37 @@ import ActivityContent from "../Components/ActivityContent";
 import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
 import CreateActivity from "../Pages/CreateActivity";
 import ReactModal from "react-modal";
-import "../Components/Modal.css";
+import "../Components/ModalSubs.css";
 import { GrClose } from 'react-icons/gr';
 
 class Activity extends Component {
-  constructor(props) {
+ 
+ constructor(props) {
     super(props);
 
-    this.state = {
-      modalActiv: false,
-      modalNew: false,
-      IsOpen: true,
-    };
-  }
+        this.state={
+            modalActiv: false,
+            modalNew: false,
+            IsOpen: true,
+        }
+    }
+    
+    displayModalActiv = (event) => {
+        this.setState({modalActiv:true})
+    }
 
-  displayModalActiv = (event) => {
-    this.setState({ modalActiv: true });
-  };
+    displayModalNew = (event) => {
+        this.setState({modalNew:true})
+    }
 
-  displayModalNew = (event) => {
-    this.setState({ modalNew: true });
-  };
+    handleClose = () => {
+        this.setState({IsOpen:false})
+    }
 
-  handleClose = () => {
-    this.setState({ IsOpen: false });
-  };
+    render(){
+        return(
+            <div>
 
-  render() {
-    return (
-      <div>
                 <ActivityContent />
                 <ActivitySubscribe 
                     activOnEvent={this.displayModalActiv} 
@@ -57,7 +59,8 @@ class Activity extends Component {
                 </ReactModal>
                 }
 
-        {this.state.modalNew == true &&
+
+                {this.state.modalNew == true &&
                     <ReactModal
                         class="modalSubs" 
                         isOpen={true}>
@@ -77,3 +80,4 @@ class Activity extends Component {
 }
 
 export default Activity;*/
+

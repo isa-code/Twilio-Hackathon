@@ -6,7 +6,7 @@ class ActivityContent extends Component {
   render() {
     return (
       <div>
-        <h1 id="activTitle">Street marauds</h1>
+        <h1 id="activTitle">Street marauding</h1>
         <div id="activPresent">
           <img
             src="https://i.picsum.photos/id/0/350/350.jpg?hmac=3413AFaMEhDr1UkWF-uBUqhGKT6vyywgTBWIlagsCAs"
@@ -24,12 +24,6 @@ class ActivityContent extends Component {
             <p>Heure de début, heure de fin</p>
             <p>Aptitudes requises</p>
           </div>
-        </div>
-
-        <div className="more">
-          <button type="button">
-            <Link to="/soutien">Je soutiens les actions par moi meme</Link>
-          </button>
         </div>
       </div>
     );

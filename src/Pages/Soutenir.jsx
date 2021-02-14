@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import "./Soutenir.css";
+import './Soutenir.css';
 
 function Soutien() {
   return (
     <>
-      <Navbar />
+
+    <Navbar/>
       <div className="soutienstyle">
-        <h1>
-          Soutenir nos actions et connaitre les assosiations que nous aident
-        </h1>
+     
+      <h1>
+        Soutenir nos actions et connaitre les assosiations que nous aident
+      </h1>
 
         <div className="informations">
           <ul>
@@ -56,8 +58,10 @@ function Soutien() {
           </ul>
         </div>
       </div>
-      <Footer />
+    </div>
+    <Footer/>
     </>
   );
 }
+
 export default Soutien;
