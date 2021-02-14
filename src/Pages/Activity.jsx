@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ActivitySubscribe from "../Components/ActivitySubscribe";
 import ActivityContent from "../Components/ActivityContent";
-// import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
+import ActivitySubsActivModal from "../Components/ActivitySubsActivModal";
 import CreateActivity from "../Pages/CreateActivity";
 import ReactModal from "react-modal";
 import "../Components/Modal.css";
+import { GrClose } from 'react-icons/gr';
 
 class Activity extends Component {
   constructor(props) {
@@ -32,47 +33,47 @@ class Activity extends Component {
   render() {
     return (
       <div>
-        <ActivityContent />
+                <ActivityContent />
+                <ActivitySubscribe 
+                    activOnEvent={this.displayModalActiv} 
+                    newOnEvent={this.displayModalNew}
+                />
 
-        <ActivitySubscribe
-          activOnEvent={this.displayModalActiv}
-          newOnEvent={this.displayModalNew}
-        />
+                {this.state.modalActiv == true &&
+                    <ReactModal 
+                        class="modalSubs" 
+                        isOpen={true}>
+                    
+                    <button type="button" className="modalBtnClose" onClick={this.handleClose}>
+                    <GrClose />
+                    </button>
 
-        {this.state.modalActiv == true && (
-          <ReactModal isOpen={true}>
-            <div className="modal">
-              <p>Done :-)</p>
+                    <div class="modalSubs">
+                        <h3>Thank you for joing this mission!</h3>
+                        <p>You will receive a confirmation soon in your emails!</p>
+                    </div>
+
+                    
+                </ReactModal>
+                }
+
+        {this.state.modalNew == true &&
+                    <ReactModal
+                        class="modalSubs" 
+                        isOpen={true}>
+                        <div class="modalSubsTxt">
+                            <p>Done :-)</p>
+                        </div>
+
+                        <button type="button" className="modalBtnClose" onClick={this.handleClose}>
+                        Fermer
+                        </button>
+                    </ReactModal>
+                }
+                <CreateActivity />
             </div>
-            <button
-              type="button"
-              className="modalBtnClose"
-              onClick={this.handleClose}
-            >
-              Fermer
-            </button>
-          </ReactModal>
-        )}
-
-        {this.state.modalNew == true && (
-          <ReactModal isOpen={true}>
-            <div className="modal">
-              <p>Done :-)</p>
-            </div>
-            <button
-              type="button"
-              className="modalBtnClose"
-              onClick={this.handleClose}
-            >
-              Fermer
-            </button>
-          </ReactModal>
-        )}
-
-        <CreateActivity />
-      </div>
-    );
-  }
+        )
+    }
 }
 
-export default Activity;
+export default Activity;*/
