@@ -8,8 +8,9 @@ import "../Components/ModalSubs.css";
 import { GrClose } from 'react-icons/gr';
 
 class Activity extends Component {
-    constructor(props){
-        super(props)
+ 
+ constructor(props) {
+    super(props);
 
         this.state={
             modalActiv: false,
@@ -33,6 +34,7 @@ class Activity extends Component {
     render(){
         return(
             <div>
+
                 <ActivityContent />
                 <ActivitySubscribe 
                     activOnEvent={this.displayModalActiv} 
@@ -57,6 +59,7 @@ class Activity extends Component {
                 </ReactModal>
                 }
 
+
                 {this.state.modalNew == true &&
                     <ReactModal
                         class="modalSubs" 
@@ -77,3 +80,4 @@ class Activity extends Component {
 }
 
 export default Activity;*/
+

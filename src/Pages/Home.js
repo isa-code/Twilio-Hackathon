@@ -16,12 +16,11 @@ function Home() {
 
   return (
     <div>
-      <ReactModal isOpen={isOpen}>
+      <ReactModal isOpen={isOpen} style={{ borderRadius: "15px" }}>
         <div className="modal">
           <div className="header"> Explanations </div>
 
           <div className="content">
-            {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a
             nostrum. Dolorem, repellat quidem ut, minima sint vel eveniet
             quibusdam voluptates delectus doloremque, explicabo tempore dicta
