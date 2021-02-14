@@ -10,8 +10,8 @@ function Soutien() {
       <Navbar />
       <SousNav/>
       <div className="soutienstyle">
-        <h1>
-          Soutenir nos actions et connaitre les assosiations que nous aident
+        <h1 className="titre">
+        Support our actions and get to know our charities helping us
         </h1>
 
         <div className="informations">
@@ -22,13 +22,10 @@ function Soutien() {
                 alt="linkee"
               />
               <p>
-                Créée en 2016, l’application Linkee répond à un double enjeu :
-                aider les plus démunis et lutter contre le gaspillage
-                alimentaire. Pour ce faire, elle a mis au point une application
-                faisant le lien entre les professionnels partenaires qui
-                effectuent des dons alimentaires, les associations caritatives
-                et les linkeurs, des bénévoles mobilisés ponctuellement pour
-                transporter les sacs d’invendus d’un point à l’autre.
+              Created in 2016, our Linkee application responds to a double issue: 
+              help the most unfortunate and help fight food waste. To reach those goals, 
+              the app is the link between profesional partners donating food, charities and linkers,
+              voluntary people mobilised transportation of unsold goods from one point to another.
               </p>
             </li>
             <li>
@@ -37,8 +34,8 @@ function Soutien() {
                 alt="chorba"
               />
               <p>
-                La Chorba est une association laïque et humanitaire, qui lutte
-                contre la faim et l'exclusion sociale depuis 1998.
+              Chorba is a nondenominational humanitarian charity fighting against hunger and 
+              social exclusion since 1998.
               </p>
             </li>
             <li>
@@ -47,12 +44,10 @@ function Soutien() {
                 alt="croix"
               />
               <p>
-                La Croix-Rouge française, c’est à la fois une association de 54
-                000 bénévoles engagés depuis près de 150 ans sur de nombreux
-                fronts de la lutte contre les précarités et une entreprise à but
-                non lucratif de services dans les champs sanitaire, social,
-                médico-social et de la formation avec 18 000 salariés dans plus
-                de 600 établissements.
+              The French Red Cross is a charity with 54 000 volunteers engaged for almost 150 
+              years on various fronts to fight against poverty.
+              A non profit entreprise taking care of sanitary social and medico-social issues
+              with 18 000 workers in more than 600 establishments.
               </p>
             </li>
           </ul>

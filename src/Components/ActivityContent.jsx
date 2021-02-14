@@ -20,15 +20,15 @@ class ActivityContent extends Component {
           />
           <div id="activPresentInfos">
             <p>
-              redirige vers le type d'activité / id de l'activité en question
+            Redirects to activity type/activity id in question
             </p>
-            <p>Présenter l'activité en question :Qu'est-ce qu'une Maraude</p>
+            <p>Presents activity: what is a marauding</p>
             <p>
-              Spécifications : Groupe de minimum 4 personnes, prévoir des
-              chaussures et vêtements confortables
+            Specifications: minimum of 4 people, provide comfortable clothes 
+             and comfy shoes 
             </p>
-            <p>Heure de début, heure de fin</p>
-            <p>Aptitudes requises</p>
+            <p>Start time, end time</p>
+            <p>Required aptitudes</p>
           </div>
         </div>
       </div>
