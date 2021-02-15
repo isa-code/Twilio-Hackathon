@@ -57,7 +57,7 @@ class ActivitySubscribe extends Component {
   render() {
     return (
       <div>
-        <h2>Want to subscribe to this mission?</h2>
+        <h2 className="subsTit">Want to subscribe to this mission?</h2>
 
         <div id="activSubsc">
           <div id="activExistSubsc">

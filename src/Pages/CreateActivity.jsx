@@ -12,7 +12,9 @@ class CreateActivity extends Component {
             <>
             <Navbar/>
             <SousNav/>
-                <div className="create">
+            <div className="create" >
+            <div >
+            <div className="createInfo">
                     <select id="CreateActivSelect">
                         <option value="">Chose a mission</option>
                         <option value="">Street maraud</option>
@@ -42,6 +44,11 @@ class CreateActivity extends Component {
           </form>
           <input type="text" placeholder="a small description" />
         </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="imgg" className="imgCreate"/>
+            </div>
+           
+                
         
         <Footer/>
       </>

@@ -1,4 +1,44 @@
+.activInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 3%;
+    box-shadow: 0px 5px 20px rgb(71,71,71);
+    padding: 20px;
+    margin: 0px 20px;
+}
+
+.activInfo:hover
+    {
+        box-shadow: 0px 5px 20px black;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        }
+p{
+ margin: 25px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+
+.activInfo img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10%;
+    margin: auto;
+}
+img:hover {
+    filter: opacity(.9);
+
+}
+
 #activTitle{
+    text-align: center;
+    margin: 50px 0px;
+}
+.subsTit{
     text-align: center;
     margin: 50px 0px;
 }
@@ -6,20 +46,9 @@
 #activPresent{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+  
 }
 
-#activPresent{
-    max-height: 350px;
-}
-
-#activPresentInfos{
-    max-height: 350px;
-    width: 60%;
-    border: 1px solid grey;
-    padding: 20px;
-    margin: 0px 20px;
-}
 
 #activSubsc {
     display: flex;
@@ -34,8 +63,13 @@ content > h2 {
 }
 
 #activExistSubsc, #activNewSubsc {
-    margin: 0px 75px;
-    border: 1px solid red;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 5%;
+    box-shadow: 0px 5px 20px rgb(71,71,71);
     width: 500px;
 }
 
