@@ -1,7 +1,22 @@
 .create{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 150px;
+    margin: 50px;
+}
+
+.imgCreate{
+    width: 450px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 50px;
+}
+
+.createInfo input{
+    width: 500px;
+}
+
+.createInfo form{
+    margin-left: -335px;
 }
