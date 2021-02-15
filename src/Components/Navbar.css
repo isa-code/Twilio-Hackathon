@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: linear-gradient(#2c7bbf, #7fb7e7, #2c7bbf);
+  background-color: #2c7bbf;
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
@@ -68,10 +68,7 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(to top, black, 20%, cyan); */
-  /* background: linear-gradient(to top, black, cyan); */
-  background: linear-gradient(#e9584b, #f5a69e, #ec584b);
-  /* background-color: #f27d72; */
+  background-color: #e9584b;
   width: 100%;
   height: 50px;
   font-family: "Lexend Mega", sans-serif !important;
@@ -80,7 +77,7 @@ ul {
   /* font-family: "Nova Round", cursive !important; */
   /* font-family: "Dosis", sans-serif !important; */
   /* font-family: "Josefin Sans", serif !important; */
-  box-shadow: 0px 5px 20 rgb(71,71,71);
+  box-shadow: 0px 5px 20 rgb(71, 71, 71);
 }
 
 .linkSousNav {

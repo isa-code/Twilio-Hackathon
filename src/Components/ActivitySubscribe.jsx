@@ -52,7 +52,7 @@ class ActivitySubscribe extends Component {
   newBtnSubmit = (event) => {
     event.preventDefault();
     this.props.newOnEvent(event);
-  }
+  };
 
   render() {
     return (
@@ -63,10 +63,7 @@ class ActivitySubscribe extends Component {
           <div id="activExistSubsc">
             <h3 className="activSubscTitle">already a member ?</h3>
 
-            <form 
-              onSubmit={this.activBtnSubmit} 
-              id="activSubscData">
-
+            <form onSubmit={this.activBtnSubmit} id="activSubscData">
               <input
                 onChange={this.activeInputEmail}
                 id="activSEmail"
@@ -80,7 +77,7 @@ class ActivitySubscribe extends Component {
               <input
                 onChange={this.activeInputPwd}
                 id="activSPwd"
-                type="text"
+                type="Password"
                 placeholder="Password"
                 required={true}
                 value={this.state.activeInputPwd}
@@ -105,9 +102,7 @@ class ActivitySubscribe extends Component {
 
           <div id="activNewSubsc">
             <h3 className="activSubscTitle">New member</h3>
-            <form 
-              onSubmit={this.newBtnSubmit}
-              id="NewSubscrData">
+            <form onSubmit={this.newBtnSubmit} id="NewSubscrData">
               <input
                 onChange={this.newInputName}
                 id="newSubscrFName"

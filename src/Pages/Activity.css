@@ -1,83 +1,81 @@
-.activInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid grey;
-    border-radius: 3%;
-    box-shadow: 0px 5px 20px rgb(71,71,71);
-    padding: 20px;
-    margin: 0px 20px;
+.activInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid grey;
+  /* border-radius: 3%; */
+  /* box-shadow: 0px 5px 20px rgb(71, 71, 71); */
+  padding: 20px;
+  margin: 0px 20px;
 }
 
-.activInfo:hover
-    {
-        box-shadow: 0px 5px 20px black;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-        }
-p{
- margin: 25px;
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: center;
+.activInfo:hover {
+  box-shadow: 0px 5px 5px black;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+p {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.activInfo img{
-    width: 350px;
-    height: 250px;
-    border-radius: 10%;
-    margin: auto;
+.activInfo img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10%;
+  margin: auto;
 }
 img:hover {
-    filter: opacity(.9);
-
+  filter: opacity(0.9);
 }
 
-#activTitle{
-    text-align: center;
-    margin: 50px 0px;
+#activTitle {
+  text-align: center;
+  margin: 50px 0px;
 }
-.subsTit{
-    text-align: center;
-    margin: 50px 0px;
-}
-
-#activPresent{
-    display: flex;
-    flex-direction: row;
-  
+.subsTit {
+  text-align: center;
+  margin: 50px 0px;
 }
 
+#activPresent {
+  display: flex;
+  flex-direction: row;
+}
 
 #activSubsc {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px 0px;
 }
 
 content > h2 {
-    text-align: center;
-    margin: 50px 0px 50px 0px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
 }
 
-#activExistSubsc, #activNewSubsc {
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid grey;
-    border-radius: 5%;
-    box-shadow: 0px 5px 20px rgb(71,71,71);
-    width: 500px;
+#activExistSubsc,
+#activNewSubsc {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid grey;
+  /* border-radius: 5%; */
+  box-shadow: 0px 5px 5px rgb(71, 71, 71);
+  width: 500px;
 }
 
 .activSubscTitle {
-    text-align: center;
+  text-align: center;
 }
 
-#activExistSubsc, #activNewSubscrData {
-    display: flex;
-    flex-direction: column;
+#activExistSubsc,
+#activNewSubscrData {
+  display: flex;
+  flex-direction: column;
 }
